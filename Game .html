@@ -1,0 +1,169 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Only Place for Legit Ways & Paid Games</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 20px;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .games-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+    .game-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+    .game-card:hover {
+      transform: scale(1.05);
+    }
+    .game-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .game-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0 5px;
+    }
+    .game-info {
+      font-size: 14px;
+      color: #666;
+    }
+    .download-btn {
+      display: inline-block;
+      margin-top: 10px;
+      background: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .download-btn:hover {
+      background: #218838;
+    }/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+.modal-content img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.unlock-btn {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.unlock-btn:hover {
+  background: #0056b3;
+}
+
+  </style>
+</head>
+<body>
+  <header>The Only Place for Legit Ways & Paid Games</header>  <div class="games-container">
+    <!-- GTA V -->
+    <div class="game-card" onclick="openModal('GTA V')">
+      <img src="https://via.placeholder.com/300x150?text=GTA+V" alt="GTA V">
+      <div class="game-title">GTA V</div>
+      <div class="game-info">⭐⭐⭐⭐☆ | 72GB | Open-world action</div>
+      <a class="download-btn">Download Now</a>
+    </div><!-- Hitman Blood Money -->
+<div class="game-card" onclick="openModal('Hitman Blood Money')">
+  <img src="https://via.placeholder.com/300x150?text=Hitman" alt="Hitman Blood Money">
+  <div class="game-title">Hitman: Blood Money</div>
+  <div class="game-info">⭐⭐⭐⭐☆ | 4.5GB | Stealth assassin</div>
+  <a class="download-btn">Download Now</a>
+</div>
+
+<!-- Minecraft -->
+<div class="game-card" onclick="openModal('Minecraft')">
+  <img src="https://via.placeholder.com/300x150?text=Minecraft" alt="Minecraft">
+  <div class="game-title">Minecraft</div>
+  <div class="game-info">⭐⭐⭐⭐⭐ | 500MB | Sandbox adventure</div>
+  <a class="download-btn">Download Now</a>
+</div>
+
+  </div>  <!-- Modal -->  <div class="modal" id="gameModal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <img id="modalImg" src="" alt="Game image">
+      <h2 id="modalTitle"></h2>
+      <p id="modalText">Complete the next step to continue.</p>
+      <button class="unlock-btn" onclick="showOfferWall()">Unlock</button>
+      <div id="offerWall" style="display:none; margin-top:15px;">
+        <!-- OGAds script will go here -->
+        <p>[Offer Wall Placeholder - Insert OGAds Script]</p>
+      </div>
+    </div>
+  </div>  <script>
+    function openModal(game) {
+      document.getElementById('gameModal').style.display = 'flex';
+      document.getElementById('modalTitle').innerText = game;
+      document.getElementById('modalImg').src = `https://via.placeholder.com/100?text=${game}`;
+    }
+
+    function closeModal() {
+      document.getElementById('gameModal').style.display = 'none';
+      document.getElementById('offerWall').style.display = 'none';
+      document.getElementById('modalText').style.display = 'block';
+    }
+
+    function showOfferWall() {
+      document.getElementById('modalText').style.display = 'none';
+      document.getElementById('offerWall').style.display = 'block';
+    }
+  </script></body>
+</html>
